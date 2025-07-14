@@ -14,8 +14,6 @@ public class task {
     private String description;        // タスクの詳細説明
     private LocalDate dueDate;         // 締切日
     private TaskStatus status;         // タスクの状態（列挙型）
-    private User assignedTo;           // 担当者（Userクラス）
-
     /**
      * コンストラクタ：タスクの初期状態を設定
      */
@@ -26,7 +24,6 @@ public class task {
         this.description = description;
         this.dueDate = dueDate;
         this.status = status;
-        this.assignedTo = assignedTo;
     }
 
     /**
@@ -87,6 +84,5 @@ public class task {
     }
 
     public void setAssignedTo(User assignedTo) {
-        this.assignedTo = assignedTo;
     }
 }
